@@ -10,54 +10,49 @@ body {
     padding: 0;
 }
 /*nav bar*/
-.container {
+.nav-container{
     display: flex;
-    gap:200px;
-    align-items: center;
-    padding: 20px 20px;
-    background-color: rgb(178, 199, 85);
-    position: relative;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    width: 90px;
-    margin-right: 10px;
-    border-radius: 50%;
-    height: 70px;
-}
-
-.logo h1 {
-    color: #fff;
-    font-size: 24px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
     justify-content: space-between;
+    align-items: center;
+    background-color:rgb(178, 199, 85) ;
 }
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+}
+.nav-item ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    list-style: none;
+}
+.nav-item ul li{
+    margin-right: 60px;
 
-
-nav ul li a {
-    color: #fff;
+}
+.nav-item ul li a{
     text-decoration: none;
-    font-size: 18px;
-    margin-left: 100px;
+    color: white;
 }
-
-nav ul li a:hover {
-    background-color: darkgreen;
+.nav-item ul li a:hover{
+cursor: pointer;
+background-color:rgb(28, 36, 8) ;
+padding: 10px 5px;
+border-radius: 4px;
 }
-.under-footer{
-    text-align: center;
-    font-size: 18px;
+#hamburger{
+    font-size: 40px;
+    display: none;
 }
-
+#hamburger:hover{
+    cursor: pointer;
+}
 /*background image*/
 
 .bg-set {
@@ -147,6 +142,7 @@ nav ul li a:hover {
     height: 50vh;
     
 }
+
 /*list of benefits*/
 .benefits{
     margin-top: 40px;
@@ -301,6 +297,33 @@ input:focus {
         margin: 0;
         padding: 0;
     }
+    .logo h1{
+        font-size: 25px;
+    }
+    
+    .nav-item ul{
+        display: none !important;  
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 100px; 
+        padding: 10px ;
+        background-color: darkgreen; 
+        width: 100%;
+        right: 0;
+
+        text-align: center;
+    }
+    .nav-item ul a{
+        margin-left: 60px;
+    }
+    #hamburger{
+        display: flex;
+        margin-right: 10px;
+    }
+    
     .inner-sentence h1{
         font-size: 20px;
         text-align: center;
@@ -308,14 +331,21 @@ input:focus {
     .fruit {
         width: 90%;
         margin: 20px;
-        height: 50vh; 
+        height: 80vh; 
+        display: flex;
+        flex-direction: column;
     }
 
     .fruit .fruit-detail {
-        font-size: 11px;
+        font-size: 15px;
         padding: 10px;
         line-height: 1;
         margin-left: 10px;
+        height: 40vh;
+        width: 70%;
+    }
+    .fruit .fruit-img{
+        height: 40vh;
     }
 
     .fruit .fruit-img img {
@@ -332,7 +362,7 @@ input:focus {
     /*list of benefits*/
     
     table {
-        width: 35%;
+        width: 40%;
         border-collapse: collapse;
     }
     .benefits h1{
@@ -342,7 +372,11 @@ input:focus {
         padding: 5px;
      font-size: 16px;
     }
+   
 }
+#nav-item.active{
+    display:flex !important;
+  }
 
 
 
