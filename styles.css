@@ -56,7 +56,6 @@ border-radius: 4px;
 /*background image*/
 
 .bg-set {
-    position: absolutr;
     background-image: url('1610511709.jpg'); 
     background-size: cover;
     background-position: center;
@@ -70,11 +69,11 @@ border-radius: 4px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    z-index: 1;
 }
 .inner-sentence h1 {
     font-size: 35px;
-    color:rgb(252, 248, 6) ;
+    color:rgb(255, 255, 255) ;
     margin-bottom: 20px;
 }
 .inner-sentence button{
@@ -298,7 +297,7 @@ input:focus {
         padding: 0;
     }
     .logo h1{
-        font-size: 25px;
+        font-size: 20px;
     }
     
     .nav-item ul{
@@ -313,7 +312,6 @@ input:focus {
         background-color: darkgreen; 
         width: 100%;
         right: 0;
-
         text-align: center;
     }
     .nav-item ul a{
@@ -334,12 +332,13 @@ input:focus {
         height: 80vh; 
         display: flex;
         flex-direction: column;
+        padding: 10px 0;
     }
 
     .fruit .fruit-detail {
-        font-size: 15px;
+        font-size: 13px;
         padding: 10px;
-        line-height: 1;
+        line-height: 1.2;
         margin-left: 10px;
         height: 40vh;
         width: 70%;
@@ -350,8 +349,9 @@ input:focus {
 
     .fruit .fruit-img img {
         max-width: 100%;
-        height: 40vh;
+        height: 30vh;
         margin-left: 10px;
+        
     }
 
     .fruit .fruit-detail button {
@@ -362,7 +362,7 @@ input:focus {
     /*list of benefits*/
     
     table {
-        width: 40%;
+        width: 35%;
         border-collapse: collapse;
     }
     .benefits h1{
