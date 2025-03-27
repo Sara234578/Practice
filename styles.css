@@ -25,6 +25,7 @@ body {
     height: 100px;
     width: 100px;
 }
+
 .nav-item ul{
     display: flex;
     justify-content: space-between;
@@ -57,11 +58,10 @@ border-radius: 4px;
 
 .bg-set {
     position: relative;
-    z-index: -1;
-    filter: blur(2px);
-    background-image: url('1610511709.jpg'); 
+    z-index: -1; 
+    background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yOTUtbXludC02MS5qcGc.jpg');
     background-size: cover;
-    background-position: center;
+    background-position:bottom;
     height: 80vh; 
     display: flex;
     justify-content: center;
@@ -79,7 +79,7 @@ border-radius: 4px;
 }
 .inner-sentence h1 {
     font-size: 35px;
-    color:white;
+    color:black;
     margin-bottom: 20px;
 }
 .inner-sentence button{
@@ -93,7 +93,7 @@ border-radius: 4px;
 .inner-sentence button:hover{
     cursor: pointer;
     background-color:rgb(178, 199, 85) ;
-    color: #fff;
+    color: white;
 }
 
 /*list of fruits*/
